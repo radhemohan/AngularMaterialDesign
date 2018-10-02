@@ -31,6 +31,17 @@ const EXAMPLE_DATA: RrTableItem[] = [
   {id: 18, name: 'Argon'},
   {id: 19, name: 'Potassium'},
   {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'},
+  {id: 20, name: 'Calcium'}
 ];
 
 /**
