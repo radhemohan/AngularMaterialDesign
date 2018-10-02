@@ -11,10 +11,8 @@
 - @angular/material:material-table: Create a component that displays data with a data-table
 - @angular/material:material-nav: Create a component with a responsive sidenav for navigation
 # Execute below commands
->ng generate @angular/material:material-nav --name rr-navbar
-- 
->ng generate @angular/material:material-dashboard --name rr-dashboard
-- 
->ng generate @angular/material:material-table --name rr-table
+- ng generate @angular/material:material-nav --name rr-navbar
+- ng generate @angular/material:material-dashboard --name rr-dashboard
+- ng generate @angular/material:material-table --name rr-table
 
 
