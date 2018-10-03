@@ -1,0 +1,83 @@
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Search Profile</mat-card-title>
+          <mat-card-subtitle>Enter the value</mat-card-subtitle>
+        </mat-card-header>
+        <!--<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+            
+            <mat-form-field class="example-full-width">
+                <mat-select placeholder="Select Brahmin Type">
+                  <mat-option value="option">Saruparin Brahmin </mat-option>
+                  <mat-option value="option">Kankubj Brahmin </mat-option>
+                </mat-select>
+              </mat-form-field>
+               <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Select Type">
+                      <mat-option value="option">Saruparin Brahmin </mat-option>
+                      <mat-option value="option">Kankubj Brahmin </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Select District">
+                      <mat-option value="option">Allahabad</mat-option>
+                      <mat-option value="option">Pratapgarh</mat-option>
+                      <mat-option value="option">Vanarsi</mat-option>
+                      <mat-option value="option">Faizabaad</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-radio-group>
+                      <mat-radio-button value="1">Male</mat-radio-button>
+                      <mat-radio-button value="2">Female</mat-radio-button>
+                    </mat-radio-group>
+        </mat-card-content>
+        <mat-card-actions>
+        
+          <button mat-button>SEARCH</button>
+        </mat-card-actions>
+      </mat-card>
+<mat-card>
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Search Results</mat-card-title>
+        <mat-card-subtitle>Profile List</mat-card-subtitle>
+      </mat-card-header>
+    <mat-card-content>
+      <table mat-table [dataSource]="profiles" class="mat-elevation-z8">
+
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+        
+          <!-- Position Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+        
+          <!-- Name Column -->
+          <ng-container matColumnDef="dob">
+            <th mat-header-cell *matHeaderCellDef> DOB </th>
+            <td mat-cell *matCellDef="let element"> {{element.dob}} </td>
+          </ng-container>
+        
+          <!-- Weight Column -->
+          <ng-container matColumnDef="mob">
+            <th mat-header-cell *matHeaderCellDef> Mobile </th>
+            <td mat-cell *matCellDef="let element"> {{element.mob}} </td>
+          </ng-container>
+        
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="address">
+            <th mat-header-cell *matHeaderCellDef> Address </th>
+            <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+          </ng-container>
+        
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </mat-card-content>
+      </mat-card>
+
+  

@@ -1,0 +1,53 @@
+
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Profile Details</mat-card-title>
+          <mat-card-subtitle>Enter the value</mat-card-subtitle>
+        </mat-card-header>
+        <!--<img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+        <mat-card-content>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Enter Name">
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Surname">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Mobile No">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Select Type">
+                      <mat-option value="option">Saruparin Brahmin </mat-option>
+                      <mat-option value="option">Kankubj Brahmin </mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <mat-select placeholder="Select District">
+                      <mat-option value="option">Allahabad</mat-option>
+                      <mat-option value="option">Pratapgarh</mat-option>
+                      <mat-option value="option">Vanarsi</mat-option>
+                      <mat-option value="option">Faizabaad</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-radio-group>
+                      <mat-radio-button value="1">Male</mat-radio-button>
+                      <mat-radio-button value="2">Female</mat-radio-button>
+                    </mat-radio-group>
+              <mat-form-field class="example-full-width"> 
+                <textarea matInput placeholder="Full Biodata Details"></textarea>
+              </mat-form-field>
+            
+              <mat-form-field class="example-full-width">
+                <input matInput [matDatepicker]="picker" placeholder="Birth Date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+ 
+          <button mat-button>ADD</button>
+        </mat-card-actions>
+      </mat-card>
+      
+  
