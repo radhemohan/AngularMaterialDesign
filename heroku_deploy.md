@@ -12,3 +12,5 @@
 
 	>> "@angular/compiler": "~7.0.0-rc.0",
     >> "@angular/compiler-cli": "~7.0.0-rc.0",
+- In your package.json, change npm start as node server.js
+- add server.js in your application src folder
