@@ -1,4 +1,5 @@
 
+
     <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
@@ -35,7 +36,7 @@
         </mat-card-content>
         <mat-card-actions>
         
-          <button mat-button>SEARCH</button>
+          <button mat-button color="primary" >SEARCH</button>
         </mat-card-actions>
       </mat-card>
 <mat-card>
@@ -45,7 +46,9 @@
         <mat-card-subtitle>Profile List</mat-card-subtitle>
       </mat-card-header>
     <mat-card-content>
-      <table mat-table [dataSource]="profiles" class="mat-elevation-z8">
+      <div class="example-container mat-elevation-z8">
+          <!--<mat-table #table [dataSource]="profiles"> -->
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"> -->
 
           <!--- Note that these columns can be defined in any order.
                 The actual rendered columns are set as a property on the row definition" -->
@@ -77,6 +80,12 @@
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
+        <mat-paginator #paginator
+                 [pageSize]="10"
+                 [pageSizeOptions]="[5, 10, 20]"
+                 [showFirstLastButtons]="true">
+        </mat-paginator>
+      </div>
       </mat-card-content>
       </mat-card>
 
