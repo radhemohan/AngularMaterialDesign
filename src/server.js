@@ -4,14 +4,17 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'dist')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/dist/AngularMaterialDesign/index.html'));
+
+app.route('/api/cats').get((req, res) => {
+  res.send({
+    cats: [{ name: 'lilly' }, { name: 'lucy' }]
+  });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.set('port', port);
 
 const server = http.createServer(app);
 server.listen(port, () => console.log('running'));
+
