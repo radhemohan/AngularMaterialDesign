@@ -6,7 +6,9 @@
 >ng add @angular/material
 
 # Deploying application on Heroku PaaS
-- Please refer Heroku_example.docx file
+- Please refer (Heroku_example.docx) file
+## Heroku application URL:
+- (https://angular022018.herokuapp.com)
 
 # Exploring Angular Material Stater Components
 - Having added new Angular Material starter components to ng generate makes it very easy to get started with Angular Material. The following starter components are available:
