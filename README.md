@@ -5,6 +5,9 @@
 - Add Material design library
 >ng add @angular/material
 
+# Deploying application on Heroku PaaS
+- Please refer Heroku_example.docx file
+
 # Exploring Angular Material Stater Components
 - Having added new Angular Material starter components to ng generate makes it very easy to get started with Angular Material. The following starter components are available:
 - @angular/material:material-dashboard: Create a card-based dashboard component
