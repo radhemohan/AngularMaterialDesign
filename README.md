@@ -6,7 +6,7 @@
 >ng add @angular/material
 
 # Deploying application on Heroku PaaS
-- Please refer (Heroku_example.docx) file
+- Please refer [Heroku_example.docx](Heroku_example.docx) file
 ## Heroku application URL:
 - (https://angular022018.herokuapp.com)
 
